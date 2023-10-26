@@ -1,8 +1,12 @@
 sap.ui.define([
-
-], function () {
+    "sap/m/Text"
+], function (Text) {
 	"use strict";
 
 
-	alert("UI5 is ready");
+    new Text({
+        text:"Hello UI5!"
+    }).placeAt("content")
 });
+
+// The sap.ui.define function is the central entry point for defining and loading JavaScript modules in SAPUI5. 
