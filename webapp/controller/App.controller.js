@@ -4,7 +4,8 @@ sap.ui.define([
     "use strict"
     return Controller.extend("sap.ui.demo.walkthrough.App",{
         onShowHello : function () {
-            alert("Hello KC !!");
+            // Show a native or vanailla JS alert
+            alert("Hello there!");
         }
     });
 });

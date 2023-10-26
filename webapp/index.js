@@ -1,12 +1,8 @@
 sap.ui.define([
-    "sap/m/Text"
-], function (Text) {
+	"sap/ui/core/mvc/XMLView"
+], (XMLView) => {
 	"use strict";
-
-
-    new Text({
-        text:"Hello UI5!"
-    }).placeAt("content")
+	XMLView.create({
+		viewName: "sap.ui.demo.walkthrough.view.App"
+	}).then((oView) => oView.placeAt("content"));
 });
-
-// The sap.ui.define function is the central entry point for defining and loading JavaScript modules in SAPUI5. 
